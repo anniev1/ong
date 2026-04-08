@@ -1,0 +1,26 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(240, 132, 132);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+#icon {
+    width: 80px ;
+    height: 80px;
+}
+
+
+#links {
+    padding-right: 10px;
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(235, 55, 94);
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

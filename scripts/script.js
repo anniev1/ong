@@ -16,11 +16,22 @@ document.getElementById("formAdocao").addEventListener("submit", function (e) {
     let responsabilidade = document.getElementById("responsabilidade").checked;
 
     if (nome.length < 3) return alert("Nome Inválido");
-    if (telefone.)
+    if (email.includes('@')) return alert("email Inválido");
+    if (telefone.length < 8) return alert ("telefone Inválido");
+    if (cpf === "")return alert ("cpf Inválido");
+    if (idade >= 18)return alert ("idade incorreta!")
+    if (cidade === "") return alert ("Por favor, selecione uma cidade")
+    if (tipoMoradia === "" || tipoMoradia === null) return alert ("obrigatorio!")
+    if (quintal === "")
 
-    document.getElementById("resultado").innerHTML = "Cadastro realizado com sucesso!<br>" + "Nome" +
-        nome;
-    
-   
+
+
+
+
+
+
+    document.getElementById("resultado").innerHTML = "Cadastro realizado com sucesso!<br>" + "Nome" + nome;
+
+
 
 });
