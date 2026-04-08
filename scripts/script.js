@@ -16,30 +16,7 @@ document.getElementById("formAdocao").addEventListener("submit", function (e) {
     let responsabilidade = document.getElementById("responsabilidade").checked;
 
     if (nome.length < 3) return alert("Nome Inválido");
-    
-    if (telefone.length < 8) return alert("Telefone inválido");
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    if (telefone.)
 
     document.getElementById("resultado").innerHTML = "Cadastro realizado com sucesso!<br>" + "Nome" +
         nome;
