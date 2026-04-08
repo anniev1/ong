@@ -27,13 +27,6 @@ document.getElementById("formAdocao").addEventListener("submit", function (e) {
     if (motivo.length < 10) return alert("O motivo deve ter pelo menos 10 caracteres.");
     if (!responsabilidade) { return alert('Você deve aceitar os termos e condições para continuar.');
 
+    }
 
-
-
-
-
-    document.getElementById("resultado").innerHTML = "Cadastro realizado com sucesso!<br>" + "Nome" + nome;
-
-
-
-});
+   

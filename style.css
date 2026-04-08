@@ -24,3 +24,15 @@ body {
     color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+.box {
+position: absolute;
+left: 0;
+right: 0;
+margin: auto;
+top: 200px;
+width: 500px;
+padding: 20px;
+background-color: black(20,20,20);
+border-left: 4px solid pink (25,197,25);
+}
