@@ -10,7 +10,6 @@ document.getElementById("formAdocao").addEventListener("submit", function (e) {
     let moradia = document.getElementById("moradia").value;
     let quintal = document.querySelector('input[name="quintal"]:checked');
     let antes = document.querySelector('input[name="antes"]:checked');
-    let dia = document.getElementById("dia").value;
     let hora = document.getElementById("horas").value;
     let motivo = document.getElementById("motivo").value;
     let responsabilidade = document.getElementById("responsabilidade").checked;
@@ -21,9 +20,12 @@ document.getElementById("formAdocao").addEventListener("submit", function (e) {
     if (cpf === "")return alert ("cpf Inválido");
     if (idade >= 18)return alert ("idade incorreta!")
     if (cidade === "") return alert ("Por favor, selecione uma cidade")
-    if (tipoMoradia === "" || tipoMoradia === null) return alert ("obrigatorio!")
-    if (quintal === "")
-
+    if (moradia === "") return alert ("obrigatorio!")
+    if (quintal === "") return alert ("Obrigatorio!")
+    if (antes === "") return alert ("Obrigatorio!")
+    if (hora < 0 || hrs > 23 || min < 0 || min > 59) return alert ("Retorna o valor numérico válido")
+    if (motivo.trim().length < 10) return alert("O motivo deve ter pelo menos 10 caracteres.");
+    if (!responsabilidade.checked) { alert('Você deve aceitar os termos e condições para continuar.')};
 
 
 
